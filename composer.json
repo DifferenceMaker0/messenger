@@ -1,0 +1,22 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "messenger/messenger",
+    "type": "project",
+    "description": "The skeleton for FB Messenger Webhook.",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "messenger/messenger",
+                "version": "1.0",
+                "type": "package",
+                "source": {
+                    "type": "git",
+                    "reference": "presentation",
+                    "url": "https://github.com/DifferenceMaker0/messenger.git"
+                }
+            }
+        }
+    ]
+}
