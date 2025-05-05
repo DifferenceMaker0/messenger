@@ -1,16 +1,16 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "messenger/messenger",
+    "name": "differencemaker0/messenger",
     "type": "project",
-    "description": "The skeleton for FB Messenger Webhook.",
+    "description": "The skeleton for FB Messenger Webhook. https://blog.orium.com/how-to-install-a-node-js-project-within-composer-df9561a8cdb8",
     "license": "MIT",
     "repositories": [
         {
             "type": "package",
             "package": {
-                "name": "messenger/messenger",
-                "version": "1.0",
-                "type": "package",
+                "name": "differencemaker0/messenger",
+                "version": "v1.1-beta",
+                "type": "node_modules",
                 "source": {
                     "type": "git",
                     "reference": "presentation",
@@ -18,5 +18,29 @@
                 }
             }
         }
-    ]
+    ],
+    "require": {
+        "oomphinc/composer-installers-extender": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DifferenceMaker0\\Messenger\\": "messenger/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "oomphinc/composer-installers-extender": true
+        }
+    },
+    "extra": {
+        "installer-types": [
+            "node_modules"
+        ],
+        "installer-paths": {
+            "node_modules/{$name}": [
+                "type:node_modules"
+            ]
+        }
+    }
 }
